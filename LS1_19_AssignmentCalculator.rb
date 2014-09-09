@@ -3,7 +3,7 @@
 
 
 def input(msg)
-	puts " ==> #{msg}"
+  puts " ==> #{msg}"
 end
 
 input "What is your first number?"
@@ -16,13 +16,13 @@ input "Which option would you like? 1) add 2) subtract 3) multiply 4) divide"
 operator = gets.chomp
 
 if operator == "1"
-	options = num1.to_i + num2.to_i
+  options = num1.to_i + num2.to_i
 elsif operator == "2"
-	options = num1.to_i - num2.to_i
+  options = num1.to_i - num2.to_i
 elsif operator == "3"
-	options = num1.to_i * num2.to_i
+  options = num1.to_i * num2.to_i
 else operator == "4"
-	options = num1.to_f / num2.to_f
+  options = num1.to_f / num2.to_f
 end
 
 input ("The Results are #{options}")
